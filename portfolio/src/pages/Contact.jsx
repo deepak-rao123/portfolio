@@ -3,8 +3,9 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
 import { Fox } from "../models/Fox";
-import useAlert from "../hooks/useAlert";
-import { Alert, Loader } from "../components/Alert";
+import useAlert  from "../hooks/useAlert";
+import  Alert  from "../components/Alert";
+import  Loader  from "../components/Loader";
 
 const Contact = () => {
   const formRef = useRef();
@@ -27,13 +28,14 @@ const Contact = () => {
 
     emailjs
       .send(
+      
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Deepak yadav",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "dy436387@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -89,7 +91,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='John'
+              placeholder=''
               required
               value={form.name}
               onChange={handleChange}
@@ -103,7 +105,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='John@gmail.com'
+              placeholder=''
               required
               value={form.email}
               onChange={handleChange}
