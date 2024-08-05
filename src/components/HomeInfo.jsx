@@ -1,43 +1,44 @@
 import { Link } from "react-router-dom";
 
 import { arrow } from "../assets/icons";
+import { Bio } from "../constants";
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
-      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+  
+      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-transparent py-2 px-5  mx-3'>
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Deepak</span>
+        <span className='font-semibold mx-2  '>{Bio.name}</span>
         👋
         <br />
         A Font End Developer
       </h1>
+      
     );
 
   if (currentStage === 2) {
     return (
-      <div className='info-box'>
-        <p className='font-medium sm:text-xl text-center'>
-           My eduction details
-        </p>
+       <div>
+        <h1></h1>
+        
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
-          Learn more
+        <Link to='/about' className='bg-transparent '>
+          About me
+
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
-      </div>
+     </div> 
     );
   }
 
   if (currentStage === 3) {
     return (
-      <div className='info-box'>
-        <p className='font-medium text-center sm:text-xl'>
-          Projects
-        </p>
+      <div >
+       
 
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
-          Visit 
+        <Link to='/projects' className=' font-medium text-center sm:text-xl'>
+          Projects 
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
       </div>
@@ -46,12 +47,10 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 4) {
     return (
-      <div className='info-box'>
-      <p className='font-medium sm:text-xl text-center'>
-        contact 
-      </p>
+      <div >
+      
 
-      <Link to='/contact' className='neo-brutalism-white neo-btn'>
+      <Link to='/contact' className='font-medium sm:text-xl text-center'>
         Let's talk
         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>
