@@ -115,7 +115,7 @@ export const education = [
     },
     {
       id: 1,
-      icon: s"chool",
+      icon: "school",
       iconBg:"",
       school: "Swami Dayanand Saraswati sr. sec. School",
       date: "Apr 2019 - Apr 2020",

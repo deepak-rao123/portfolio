@@ -2,7 +2,9 @@ import React from "react"
 import {VerticalTimeline,VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'
 import { Tilt } from "react-tilt";
+import  Cta from "../components/Cta";
 import { Bio, skills, education } from "../constants"
+
 
 
 const About = () => {
@@ -15,13 +17,14 @@ const About = () => {
   <div className="mt-5 flex-col gap-3 ">
   <h2 className="subhead-text">{Bio.role} </h2>
   <p className="font-normal text-xl leading-none mt-10 w-1/2"> {Bio.description}</p>
+  
   </div>
 
-  <div className="py-10 px-16 mt-10 flex flex-col ">
-    <h3 className="subhead-text">My Skills</h3>
+  <div className="py-10 px-16 mt-10 flex flex-col relative ">
+    <h3 className=" px-[20vw] text-3xl font-bold">My Skills</h3>
     
 
-    <div className="mt-16 flex flex-wrap gap-12  px-16 py-16 ">
+    <div className="mt-16 flex flex-wrap gap-12  px-16 py-16  ">
 
      
       {skills.map((skill,index) =>(
@@ -91,6 +94,7 @@ const About = () => {
           ))}
        </VerticalTimeline>
   </div>
+  <Cta/>
  </section>
   )
 }
