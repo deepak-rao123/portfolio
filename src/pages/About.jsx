@@ -1,5 +1,5 @@
 import React from "react"
-// import {verticalTimeline,verticalTimelineElement} from 'react-vertical-timeline-component';
+import {VerticalTimeline,VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'
 import { Tilt } from "react-tilt";
 import { Bio, skills, education } from "../constants"
@@ -46,32 +46,38 @@ const About = () => {
        educational details are as follows.</p>
        </div>
 
-       <div className="mt-12 flex"></div>
-       <verticalTimeline>
+       <div className="mt-12 flex "></div>
+       <VerticalTimeline>
        {education.map((education) => (
-        <verticalTimelineElement key={education.school}
+        <VerticalTimelineElement key={education.school}
         degree={education.degree}
         date={education.date}
         desc={education.desc}
         icon={
-          <div>
+          <div className="flex justify-center items-center w-full h-full">
             <img src={education.icon} alt={education.school} className="w-[60%] h-[60%] object-contain " />
-          </div>
-        }>
+          </div>}
+          contentStyle={{
+            borderBottom:'8px',
+            borderStyle:'solid',
+            borderBottomColor: education.iconBg,
+            boxShadow:'none',
+          }}>
+        
 
-            <div >
-              <h3 className="text-black text-xl font-poppins font-semibold mt-10">
+            <div>
+              <h3 className="text-black text-xl font-poppins font-semibold">
               {education.school}
               </h3>
-              <p className="text-black-500 font-medium  font- base m-5"
+              <p className="text-black-500 font-medium  font- base"
               style={{margin:0}} >
                 {education.degree}
                 </p>
-              <p className="text-black-500 font-medium  font- base m-5"
+              <p className="text-black-500 font-medium  font- base"
               style={{margin:0}} >
                 {education.date}
                 </p>
-              <p className="text-black-500 font-medium  font- base m-5"
+              <p className="text-black-500 font-medium  font- base "
               style={{margin:0}} >
                 {education.desc}
                 </p>
@@ -81,9 +87,9 @@ const About = () => {
             
             </div>
 
-            </verticalTimelineElement>
+            </VerticalTimelineElement>
           ))}
-       </verticalTimeline>
+       </VerticalTimeline>
   </div>
  </section>
   )

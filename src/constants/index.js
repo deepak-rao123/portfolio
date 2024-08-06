@@ -1,26 +1,18 @@
-
+// import { meta, shopify, starbucks, tesla, aryacollege,school } from "../assets/images";
 import {
-    car,
     contact,
     css,
-    estate,
-   
     git,
     github,
     html,
     javascript,
     linkedin,
-    
     motion,
     mui,
     nextjs,
-    
-    
     react,
     redux,
     sass,
-   
-    
     tailwindcss,
     
     
@@ -113,7 +105,8 @@ export const skills = [
 export const education = [
     {
       id: 0,
-      icon: "portfolio-website/src/images/arya college.jpg",
+      icon: "aryacollege",
+      iconBg:"",
       school: "Arya College of Engineering",
       date: "Aug 2020 - july 2024",
       grade: "8.41 CGPA",
@@ -122,16 +115,18 @@ export const education = [
     },
     {
       id: 1,
-      icon: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      icon: s"chool",
+      iconBg:"",
       school: "Swami Dayanand Saraswati sr. sec. School",
       date: "Apr 2019 - Apr 2020",
       grade: "74.6%",
-      desc: "I completed my class 12 high school education at Swami Dayanand Saraswati sr. sec. School, Rewari, where I studied Science.",
+      desc: "I completed my class 12 high school education at Swami Dayanand Saraswati sr. sec. School, Rewari, .",
       degree: "(XII), Science ",
     },
     {
       id: 2,
-      icon: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      icon: "school",
+      iconBg:"",
       school: "Swami Dayanand Saraswati sr. sec. School",
       date: "Apr 2017 - Apr 2018",
       grade: "74%",
@@ -160,23 +155,40 @@ export const socialLinks = [
     }
 ];
 
+
+
 export const projects = [
    
    
     {
-        iconUrl: car,
+        iconUrl: javascript,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'Ecommerce Website',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        link: 'https://github.com/deepak-rao123/Ecommerce',
     },
    
     {
-        iconUrl: estate,
+        iconUrl: react,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Recipe website',
+        description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
+        link: 'https://github.com/deepak-rao123',
     },
+    {
+        icon: react ,
+        theme: 'btn-back-black',
+        name: 'Todo website',
+        description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
+        link: 'https://github.com/deepak-rao123/Todo-app',
+    },
+    {
+        iconUrl: javascript,
+        theme: 'btn-back-black',
+        name: 'Quiz website',
+        description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
+        link: 'https://github.com/deepak-rao123/Quiz-website',
+    },
+  
  
 ];
