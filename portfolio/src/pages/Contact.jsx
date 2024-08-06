@@ -66,7 +66,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: "Something Wrong",
             type: "danger",
           });
         }
@@ -74,7 +74,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className='relative flex lg:flex-row flex-col max-container  font-["Founders_Grotesk_X-Condensed"] '>
       {alert.show && <Alert {...alert} />}
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
@@ -85,7 +85,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className='w-full flex flex-col gap-7 mt-14'
         >
-          <label className='text-black-500 font-semibold'>
+          <label className='  font-semibold'>
             Name
             <input
               type='text'
@@ -99,7 +99,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className='  font-semibold'>
             Email
             <input
               type='email'
@@ -113,7 +113,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className=' font-semibold'>
             Your Message
             <textarea
               name='message'
