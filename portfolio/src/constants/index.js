@@ -157,7 +157,7 @@ export const projects = [
         iconUrl: javascript,
         theme: 'btn-back-blue',
         name: 'Ecommerce Website',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+        description: 'Ecommerce website using HTML, CSS and JavaScript. It is a multipage and responsive website.it has product details  and add to cart page.',
         link: 'https://github.com/deepak-rao123/Ecommerce',
     },
    
@@ -172,14 +172,14 @@ export const projects = [
         icon: react ,
         theme: 'btn-back-black',
         name: 'Todo website',
-        description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
+        description: 'todo website has a add, delete and clear all functionality and it shows the real time',
         link: 'https://github.com/deepak-rao123/Todo-app',
     },
     {
         iconUrl: javascript,
         theme: 'btn-back-black',
         name: 'Quiz website',
-        description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
+        description: 'quiz website created with html, css and javascript',
         link: 'https://github.com/deepak-rao123/Quiz-website',
     },
   
