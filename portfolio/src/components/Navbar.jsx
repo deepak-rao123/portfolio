@@ -1,4 +1,5 @@
-import {NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
+import { socialLinks } from "../constants"
 const Navbar = () => {
   return (
    <header className="header">
@@ -14,6 +15,10 @@ const Navbar = () => {
       <NavLink to="/projects" className= {( {isActive}) => isActive ? 'text-blue-500':'text-black'}>
       Projects
       </NavLink>
+      {/* <Link  href={socialLinks.github}>
+              Github 
+            </Link> */}
+            <a href="https://github.com/deepak-rao123">Github</a>
 
     </nav>
 

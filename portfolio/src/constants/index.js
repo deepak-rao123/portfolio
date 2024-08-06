@@ -138,20 +138,13 @@ export const education = [
 
 
 export const socialLinks = [
+  
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        github: "https://github.com/deepak-rao123",
     },
     {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        
+         linkedin: 'https://www.linkedin.com/in/YourLinkedInUsername',
     }
 ];
 
