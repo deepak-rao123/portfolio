@@ -1,4 +1,6 @@
 // import { meta, shopify, starbucks, tesla, aryacollege,school } from "../assets/images";
+import  aryacollege  from "../assets/images/aryacollege.jpg";
+import  school  from "../assets/images/school.jpg";
 import {
     contact,
     css,
@@ -105,7 +107,7 @@ export const skills = [
 export const education = [
     {
       id: 0,
-      icon: "aryacollege",
+      icon: aryacollege,
       iconBg:"",
       school: "Arya College of Engineering",
       date: "Aug 2020 - july 2024",
@@ -115,7 +117,7 @@ export const education = [
     },
     {
       id: 1,
-      icon: "school",
+      icon: school,
       iconBg:"",
       school: "Swami Dayanand Saraswati sr. sec. School",
       date: "Apr 2019 - Apr 2020",
@@ -125,7 +127,7 @@ export const education = [
     },
     {
       id: 2,
-      icon: "school",
+      icon: school,
       iconBg:"",
       school: "Swami Dayanand Saraswati sr. sec. School",
       date: "Apr 2017 - Apr 2018",
@@ -157,7 +159,7 @@ export const projects = [
         iconUrl: javascript,
         theme: 'btn-back-blue',
         name: 'Ecommerce Website',
-        description: 'Ecommerce website using HTML, CSS and JavaScript. It is a multipage and responsive website.it has product details  and add to cart page.',
+        description: 'Developed a fully functional e-commerce website using HTML, CSS, and JavaScript, providing a platform for users to browse, search, and purchase products. Implemented a responsive design ensuring compatibility across various devices, enhancing user accessibility.',
         link: 'https://github.com/deepak-rao123/Ecommerce',
     },
    

@@ -9,14 +9,14 @@ import { arrow } from "../assets/icons";
 const Projects = () => {
   return (
     <section className='max-container'>
-      <h1 className='head-text'>
+      <h1 className='head-text font-["Neue_Montreal"] uppercase'>
         My{" "}
-        <span className='blue-gradient_text drop-shadow font-semibold'>
+        <span className='blue-gradient_text drop-shadow font-semibold  '>
           Projects
         </span>
       </h1>
 
-      <p className='text-slate-500 mt-2 leading-relaxed'>
+      <p className='text-slate-500 mt-2 leading-relaxed font-["Neue_Montreal"]'>
         I've embarked on numerous projects throughout the years, but these are
         the ones I hold closest to my heart. Many of them are open-source, so if
         you come across something that piques your interest, feel free to
@@ -33,7 +33,7 @@ const Projects = () => {
                   transition={{ duration:1.5 }}
                   whileInView={{ opacity:1,y:0 }}
                   viewport={{ once:true }}
-      className='flex flex-wrap my-20 gap-16 '>
+      className='flex flex-wrap my-20 gap-16 font-["Neue_Montreal"] '>
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>
