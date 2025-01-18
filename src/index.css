@@ -23,15 +23,15 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply w-screen mx-10 sm:p-16 pb-12 !pt-[126px]  min-h-[calc(100vh-80px)];
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug ;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative ;
   }
 
   .blue-gradient_text {
@@ -51,7 +51,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-between items-center sm:px-2 px-2 py-2 max-w-fit mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
   }
 
   .footer {

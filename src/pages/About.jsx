@@ -15,22 +15,22 @@ const About = () => {
   </h1>
 
   <div className=" flex-col gap-3 ">
-  <h2 className="head-text uppercase
+  <h2 className="head-text uppercase font-['Neue_Montreal']
   ">{Bio.role} </h2>
-  <p className="font-normal text-xl leading-none mt-10 w-1/2 font-['Neue_Montreal']"> {Bio.description}</p>
+  <p className="font-medium text-2xl leading-none mt-10 w-1/2 font-['Neue_Montreal']"> {Bio.description}</p>
   
   </div>
 
   <div className="py-10 px-16 mt-10 flex flex-col relative ">
-    <h3 className=" head-text px-[20vw] text-3xl font-bold font-['Neue_Montreal'] uppercase">My Skills</h3>
+    <h3 className=" head-text px-[30vw] text-3xl font-bold font-['Neue_Montreal'] uppercase">My Skills</h3>
     
 
-    <div className="mt-16 flex flex-wrap gap-12  px-16 py-16  ">
+    <div className="mt-16 flex flex-wrap gap-12  py-16  ">
 
      
       {skills.map((skill,index) =>(
         <Tilt>
-        <div className="block-container w-20 h-20">
+        <div className="block-container w-28 h-28">
           <div className="btn-back rounded-xl" />
           <div className="btn-front rounded-xl flex justify-center items-center">
             <img
@@ -44,9 +44,9 @@ const About = () => {
     </div>
   </div>
   <div className="py-16 ">
-    <h3 className="head-text uppercase font-['Neue_Montreal']">Education</h3>
-       <div className="mt-5 flex-col gap-3 ">
-       <p className="font-normal text-xl leading-none mt-10 w-1/2 font-['Neue_Montreal']"> My education has been a journey of self-discovery and growth. My
+    <h3 className="head-text px-[32vw] uppercase font-['Neue_Montreal']">Education</h3>
+       <div className="mt-5  mx-[20vw] ">
+       <p className="font-normal text-xl leading-none mt-10  font-['Neue_Montreal']"> My education has been a journey of self-discovery and growth. My
        educational details are as follows.</p>
        </div>
 
@@ -58,8 +58,8 @@ const About = () => {
         date={education.date}
         desc={education.desc}
         icon={
-          <div className="flex justify-center items-center w-full h-full font-['Neue_Montreal']">
-            <img src={education.icon} alt={education.school} className="w-[60%] h-[60%] object-contain font-['Neue_Montreal']" />
+          <div className="flex justify-center items-center w-full h-full">
+            <img src={education.icon} alt={education.school} className="w-[80%] h-[80%] object-contain" />
           </div>}
           contentStyle={{
             borderBottom:'8px',
@@ -70,18 +70,18 @@ const About = () => {
         
 
             <div>
-              <h3 className="text-black text-xl  font-semibold font-['Neue_Montreal']">
+              <h3 className="text-black text-2xl  font-semibold font-['Neue_Montreal']">
               {education.school}
               </h3>
-              <p className="text-black-500 font-medium  font- base font-['Neue_Montreal']"
+              <p className="text-black-500  text-2xl font-medium   font-['Neue_Montreal']"
               style={{margin:0}} >
                 {education.degree}
                 </p>
-              <p className="text-black-500 font-medium  font- base font-['Neue_Montreal']"
+              <p className="text-black-500 font-medium   font-['Neue_Montreal']"
               style={{margin:0}} >
                 {education.date}
                 </p>
-              <p className="text-black-500 font-medium  font- base font-['Neue_Montreal']"
+              <p className="text-black-500  text-2xl font-medium   font-['Neue_Montreal']"
               style={{margin:0}} >
                 {education.desc}
                 </p>

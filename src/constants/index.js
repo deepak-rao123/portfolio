@@ -1,6 +1,7 @@
-// import { meta, shopify, starbucks, tesla, aryacollege,school } from "../assets/images";
-import  aryacollege  from "../assets/images/aryacollege.jpg";
-import  school  from "../assets/images/school.jpg";
+import {  aryacollege,school,todowebsite,recipe,ecommerce, smartgroceryplanner } from "../assets/images";
+// import  aryacollege  from "../assets/images/aryacollege.jpg";
+// import  school  from "../assets/images/school.jpg";
+// import  {todowebsite}  from "../assets/images/todowebsite.png";
 import {
     contact,
     css,
@@ -153,10 +154,19 @@ export const socialLinks = [
 
 
 export const projects = [
+
+    {
+        icon: smartgroceryplanner,
+        theme: 'btn-back-black',
+        name: 'Smart Grocery Planner',
+        description: "Developed a responsive progressive web application (PWA) for grocery planning and management Features include grocery list creation, budet tracking with dynamic charts. Implemented dark mode for enhanced user experience and optimized for offline usage with PWA capabilities",
+        link: 'https://smartgroceryplanner.netlify.app',
+    },
+  
    
    
     {
-        iconUrl: javascript,
+        icon: ecommerce,
         theme: 'btn-back-blue',
         name: 'Ecommerce Website',
         description: 'Developed a fully functional e-commerce website using HTML, CSS, and JavaScript, providing a platform for users to browse, search, and purchase products. Implemented a responsive design ensuring compatibility across various devices, enhancing user accessibility.',
@@ -164,25 +174,18 @@ export const projects = [
     },
    
     {
-        iconUrl: react,
+        icon: recipe,
         theme: 'btn-back-black',
         name: 'Recipe website',
         description: 'This Recipe search website designed with tailwind CSS.Mobile first responsive design approach using flexbox and grid layouts',
         link: 'https://github.com/deepak-rao123',
     },
     {
-        icon: react ,
+        icon: todowebsite ,
         theme: 'btn-back-black',
         name: 'Todo website',
         description: 'todo website has a add, delete and clear all functionality and it shows the real time',
         link: 'https://github.com/deepak-rao123/Todo-app',
-    },
-    {
-        iconUrl: javascript,
-        theme: 'btn-back-black',
-        name: 'Quiz website',
-        description: 'quiz website created with html, css and javascript',
-        link: 'https://github.com/deepak-rao123/Quiz-website',
     },
   
  

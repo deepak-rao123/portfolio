@@ -7,7 +7,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
   
-      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-transparent py-2 px-5  mx-3'>
+      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-transparent py-2 px-8  mx-5'>
         Hi, I'm
         <span className='font-semibold mx-2  '>{Bio.name}</span>
         👋

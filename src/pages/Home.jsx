@@ -49,7 +49,7 @@ const Home = () => {
 
   
   return (
-    <section className='w-full h-screen relative font-["Neue_Montreal"]'>
+    <section className=' h-screen  font-["Neue_Montreal"]   '>
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage = {currentStage}/>}
       </div>

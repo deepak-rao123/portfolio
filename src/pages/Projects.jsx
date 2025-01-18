@@ -36,13 +36,13 @@ const Projects = () => {
       className='flex flex-wrap my-20 gap-16 font-["Neue_Montreal"] '>
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
+            <div className='block-container w-40 h-40'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+              <div className=' w-40 h-40 btn-front rounded-xl flex justify-center items-center'>
                 <img
-                  src={projects.icon}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
+                  src={project.icon}
+                  alt='icons'
+                  className='w-full h-full object-contain'
                 />
               </div>
             </div>

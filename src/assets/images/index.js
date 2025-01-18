@@ -1,17 +1,26 @@
 import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+
 import logo from './logo.svg'
-// import aryacollege from './aryacollege.jpg'
+import aryacollege from './aryacollege.jpg'
+import todowebsite from './todowebsite.png'
+import school from './school.jpg'
+import recipe from './recipe.png'
+import ecommerce from './ecommerce.png'
+import smartgroceryplanner from './smartgroceryplanner.jpg'
+
+
+
 
 export {
     hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
+    recipe,
+    ecommerce,
+    smartgroceryplanner,
+   
+    school,
+    
     logo,
-    // aryacollege
+    aryacollege,
+    todowebsite
+    
 }
